@@ -1,0 +1,10 @@
+{
+  "name": "Ratio",
+  "description": "Compute Y/X per data point",
+  "tags": ["simple arithmetic"],
+  "authors": ["tercen"],
+  "urls": ["https://github.com/tercen/ratio_operator"],
+  "properties": []
+}
+
+
