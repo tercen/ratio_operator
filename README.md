@@ -12,7 +12,7 @@ Input projection|.
 
 Output relations|.
 ---|---
-`ratio`          | numeric, ratio of the input values defined per 
+`ratio`          | numeric, ratio value returned per cell
 
 ##### Details
 The operator takes the value defined by the y-axis and divides it by the value defined by the x-axis. The computation is done per cell. There is one value calculated and returned for each of the input cell.
