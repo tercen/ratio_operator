@@ -15,7 +15,7 @@ Output relations|.
 `ratio`          | numeric, ratio value returned per cell
 
 ##### Details
-The operator takes the value defined by the y-axis and divides it by the value defined by the x-axis. The computation is done per cell. There is one value calculated and returned for each of the input cell.
+The operator takes the value defined by the y-axis and divides it by the value defined by the x-axis. The computation is done per cell. There is one value calculated and returned for data point.
 
 #### References
 
