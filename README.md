@@ -22,7 +22,7 @@ The operator takes the value defined by the y-axis and divides it by the value d
 
 ##### See Also
 
-[sum_operator](https://github.com/tercen/sum_operator), [product_operator](https://github.com/tercen/product_operator)
+[sum](https://github.com/tercen/sum_operator), [product](https://github.com/tercen/product_operator)
 
 
 #### Examples
