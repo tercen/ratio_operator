@@ -4,7 +4,7 @@
   "namespace": "test",
   "inputDataUri": "crabs-long.csv",
   "outputDataUri": ["result.csv"],
-  "columns": ["sex"],
+  "columns": ["observation"],
   "rows": ["variable"],
   "colors": [],
   "labels": [],
