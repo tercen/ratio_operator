@@ -1,10 +1,14 @@
 {
   "name": "Ratio",
   "description": "Calculates the number of times a data point will divide into a specified X.",
-  "tags": ["simple arithmetic"],
-  "authors": ["tercen"],
-  "urls": ["https://github.com/tercen/ratio_operator"],
+  "tags": [
+    "arithmetic"
+  ],
+  "authors": [
+    "tercen"
+  ],
+  "urls": [
+    "https://github.com/tercen/ratio_operator"
+  ],
   "properties": []
 }
-
-
