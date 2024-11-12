@@ -10,5 +10,20 @@
   "urls": [
     "https://github.com/tercen/ratio_operator"
   ],
-  "properties": []
+  "properties": [
+    {
+      "kind": "DoubleProperty",
+      "name": "Dividend Column ID",
+      "defaultValue": 0,
+      "values": {},
+      "description": "Column ID to be used in the numerator (if 0, columns are ignored and the ratio is computed by diviving Y values by X values)."
+    },
+    {
+      "kind": "DoubleProperty",
+      "name": "Divisor Column ID",
+      "defaultValue": 0,
+      "values": {},
+      "description": "Column ID to be used in the denominator (if 0, columns are ignored and the ratio is computed by diviving Y values by X values)."
+    }
+  ]
 }
