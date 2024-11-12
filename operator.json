@@ -24,6 +24,13 @@
       "defaultValue": 0,
       "values": {},
       "description": "Column ID to be used in the denominator (if 0, columns are ignored and the ratio is computed by diviving Y values by X values)."
+    },
+    {
+      "kind": "EnumeratedProperty",
+      "name": "Method",
+      "defaultValue": "y / x",
+      "values": ["y / x", "y / (x + y)"],
+      "description": "Which ratio to compute."
     }
   ]
 }
