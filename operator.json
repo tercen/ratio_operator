@@ -16,21 +16,83 @@
       "name": "Dividend Column ID",
       "defaultValue": 0,
       "values": {},
-      "description": "Column ID to be used in the numerator (if 0, columns are ignored and the ratio is computed by diviving Y values by X values)."
+      "description": "Column ID to be used in the numerator (if 0, columns are ignored and the ratio is computed by dividing Y values by X values)."
     },
     {
       "kind": "DoubleProperty",
       "name": "Divisor Column ID",
       "defaultValue": 0,
       "values": {},
-      "description": "Column ID to be used in the denominator (if 0, columns are ignored and the ratio is computed by diviving Y values by X values)."
+      "description": "Column ID to be used in the denominator (if 0, columns are ignored and the ratio is computed by dividing Y values by X values)."
     },
     {
       "kind": "EnumeratedProperty",
       "name": "Method",
       "defaultValue": "y / x",
-      "values": ["y / x", "y / (x + y)"],
+      "values": [
+        "y / x",
+        "y / (x + y)"
+      ],
       "description": "Which ratio to compute."
     }
-  ]
+  ],
+  "operatorSpec": {
+    "kind": "OperatorSpec",
+    "ontologyUri": "https://tercen.com/_ontology/tercen",
+    "ontologyVersion": "0.0.1",
+    "inputSpecs": [
+      {
+        "kind": "CrosstabSpec",
+        "metaFactors": [
+          {
+            "kind": "MetaFactor",
+            "name": "Variable",
+            "type": "",
+            "description": "Variable identifiers (channel, marker name or ID, ...)",
+            "ontologyMapping": "variable",
+            "crosstabMapping": "row",
+            "cardinality": "1..n",
+            "factors": []
+          },
+          {
+            "kind": "MetaFactor",
+            "name": "Observation identifier",
+            "type": "",
+            "description": "An identifier for the observations (event ID, ...)",
+            "ontologyMapping": "observation",
+            "crosstabMapping": "column",
+            "cardinality": "1..n",
+            "factors": []
+          }
+        ],
+        "axis": [
+          {
+            "kind": "AxisSpec",
+            "metaFactors": [
+              {
+                "kind": "MetaFactor",
+                "name": "Y Axis",
+                "type": "numeric",
+                "description": "The dividend of the ratio",
+                "ontologyMapping": "y-axis",
+                "crosstabMapping": "y",
+                "cardinality": "1",
+                "factors": []
+              },
+              {
+                "kind": "MetaFactor",
+                "name": "X Axis",
+                "type": "numeric",
+                "description": "The divisor of the ratio",
+                "ontologyMapping": "x-axis",
+                "crosstabMapping": "x",
+                "cardinality": "1",
+                "factors": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
 }
