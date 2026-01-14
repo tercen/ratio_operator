@@ -83,10 +83,10 @@
                 "kind": "MetaFactor",
                 "name": "X Axis",
                 "type": "numeric",
-                "description": "The divisor of the ratio",
+                "description": "The divisor of the ratio (optional if using column IDs)",
                 "ontologyMapping": "x-axis",
                 "crosstabMapping": "x",
-                "cardinality": "1",
+                "cardinality": "0..1",
                 "factors": []
               }
             ]
