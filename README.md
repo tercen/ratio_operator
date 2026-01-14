@@ -9,7 +9,9 @@
 Input projection|.
 ---|---
 `y-axis`           | is the dividend of ratio
-`x-axis`           | is the divisor of ratio
+`x-axis`           | optional, is the divisor of ratio (not needed if using column IDs)
+`row`           | optional, row factor for grouping
+`column`           | optional, column factor for grouping
 
 Output relations|.
 ---|---
