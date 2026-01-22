@@ -49,7 +49,7 @@
             "name": "Row",
             "type": "",
             "description": "Optional row factor for grouping",
-            "ontologyMapping": "row",
+            "ontologyMapping": "variable",
             "crosstabMapping": "row",
             "cardinality": "0..n",
             "factors": []
@@ -59,7 +59,7 @@
             "name": "Column",
             "type": "",
             "description": "Optional column factor for grouping",
-            "ontologyMapping": "column",
+            "ontologyMapping": "observation",
             "crosstabMapping": "column",
             "cardinality": "0..n",
             "factors": []
@@ -74,7 +74,7 @@
                 "name": "Y Axis",
                 "type": "numeric",
                 "description": "The dividend of the ratio",
-                "ontologyMapping": "y-axis",
+                "ontologyMapping": "measurement",
                 "crosstabMapping": "y",
                 "cardinality": "1",
                 "factors": []
@@ -84,7 +84,7 @@
                 "name": "X Axis",
                 "type": "numeric",
                 "description": "The divisor of the ratio (optional if using column IDs)",
-                "ontologyMapping": "x-axis",
+                "ontologyMapping": "measurement",
                 "crosstabMapping": "x",
                 "cardinality": "0..1",
                 "factors": []
