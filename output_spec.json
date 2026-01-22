@@ -5,6 +5,7 @@
       "description": "Join keys vary based on Column ID properties",
       "alternatives": [
         {
+          "kind": "OutputAlternative",
           "condition": "Column IDs = 0 (default, use X/Y axes)",
           "joinSpec": {
             "kind": "OperatorJoinSpec",
@@ -38,6 +39,7 @@
           }
         },
         {
+          "kind": "OutputAlternative",
           "condition": "Column IDs > 0 (use specific columns)",
           "joinSpec": {
             "kind": "OperatorJoinSpec",
