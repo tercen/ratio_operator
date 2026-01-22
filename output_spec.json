@@ -1,5 +1,5 @@
 {
-  "outputSpecs": [
+  "outputSpecsV2": [
     {
       "kind": "ConditionalJoinSpec",
       "description": "Join keys vary based on Column ID properties",
