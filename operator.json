@@ -93,6 +93,81 @@
           }
         ]
       }
+    ],
+    "outputSpecsV2": [
+      {
+        "kind": "ConditionalJoinSpec",
+        "description": "Join keys vary based on Column ID properties",
+        "alternatives": [
+          {
+            "kind": "OutputAlternative",
+            "condition": "Column IDs = 0 (default, use X/Y axes)",
+            "joinSpec": {
+              "kind": "OperatorJoinSpec",
+              "joinOperators": [
+                {
+                  "kind": "JoinOperator",
+                  "joinType": "left",
+                  "leftPair": {
+                    "kind": "ColumnPair",
+                    "lColumns": [
+                      "Row",
+                      "Column"
+                    ],
+                    "rColumns": [
+                      "Row",
+                      "Column"
+                    ]
+                  },
+                  "rightRelation": {
+                    "kind": "TableRelation",
+                    "attributes": [
+                      {
+                        "kind": "Attribute",
+                        "name": "ratio",
+                        "type": "double"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "kind": "OutputAlternative",
+            "condition": "Column IDs > 0 (use specific columns)",
+            "joinSpec": {
+              "kind": "OperatorJoinSpec",
+              "joinOperators": [
+                {
+                  "kind": "JoinOperator",
+                  "joinType": "left",
+                  "leftPair": {
+                    "kind": "ColumnPair",
+                    "lColumns": [
+                      "Row"
+                    ],
+                    "rColumns": [
+                      "Row"
+                    ]
+                  },
+                  "rightRelation": {
+                    "kind": "TableRelation",
+                    "attributes": [
+                      {
+                        "kind": "Attribute",
+                        "name": "ratio",
+                        "type": "double"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "refactorSuggestion": "Split into ratio_xy and ratio_columns operators"
+      }
     ]
   }
 }
